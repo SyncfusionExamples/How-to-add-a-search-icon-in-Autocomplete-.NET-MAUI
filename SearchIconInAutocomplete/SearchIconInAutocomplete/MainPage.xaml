@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SearchIconInAutocomplete.MainPage"
+             xmlns:local="clr-namespace:SearchIconInAutocomplete"     
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs">
+
+    <ContentPage.BindingContext>
+        <local:SocialMediaViewModel />
+    </ContentPage.BindingContext>
+
+
+    <VerticalStackLayout Spacing="10" Padding="20">
+        <!-- Title Label -->
+        <Label Text="AutoComplete With Search Icon" 
+           HorizontalOptions="Center"
+           FontSize="14"
+           FontAttributes="Bold"/>
+
+        <!-- AutoComplete with Search Icon -->
+        <Border  
+        WidthRequest="270" 
+        StrokeShape="RoundRectangle 6" 
+        StrokeThickness="1" 
+        Stroke="LightGray"
+        BackgroundColor="White"
+        HorizontalOptions="Center">
+
+            <Grid ColumnDefinitions="*,40">
+                <!-- SfAutocomplete -->
+                <editors:SfAutocomplete ShowBorder="False"
+                                    IsClearButtonVisible="False"
+                                    x:Name="autocomplete"
+                                    BackgroundColor="Transparent"
+                                    DisplayMemberPath="Name"
+                                    DropdownWidth="270"
+                                    ItemsSource="{Binding SocialMedias}"
+                                    VerticalOptions="Center"/>
+
+                <!-- Search Icon -->
+                <Label Text="&#xF349;" 
+                   Grid.Column="1" 
+                   FontSize="20"  
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"
+                   FontFamily="MaterialDesignIcons"
+                   TextColor="Gray"
+                   BackgroundColor="Transparent">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+        </Border>
+    </VerticalStackLayout>
+
+
+
+
+</ContentPage>
