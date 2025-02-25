@@ -60,3 +60,6 @@ private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     DisplayAlert("Search Text", $"You searched for: {autocomplete.Text}", "OK");
 }
 ```
+**Output:**
+
+![autocompleteSearchIcon.png](https://support.syncfusion.com/kb/agent/attachment/article/17496/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM2NDk2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.fdQvyiT0NjPfbkYQjhlwvkQv7vNvdw5fGLqAOQepEHk)
