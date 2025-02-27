@@ -1,4 +1,4 @@
-# How-to-add-a-search-icon-in-Autocomplete-.NET-MAUI
+# How to add a search icon in .NET MAUI Autocomplete
 This repository contains a sample explaining how to add a search icon in Autocomplete .NET MAUI
 
 ## Adding a Search Icon in the AutoComplete .NET MAUI
